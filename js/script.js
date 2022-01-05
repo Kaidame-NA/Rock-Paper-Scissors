@@ -38,3 +38,13 @@ function playRound(playerSelection, computerSelection)
 			return "Invalid Choice";
 	}
 }
+
+function game()
+{
+	for(let i = 0; i < 5; ++i)
+	{
+		let playerSelection = prompt("Select an object: ");
+		let computerSelection = computerPlay();
+		console.log(playRound(playerSelection, computerSelection));
+	}
+}
